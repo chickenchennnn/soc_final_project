@@ -1,0 +1,104 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Tue Jan 16 11:26:32 2024
+[*]
+[dumpfile] "/home/soc/caravel-soc_fpga-lab_original/fuck_final/testbench/combine/combine.vcd"
+[dumpfile_mtime] "Tue Jan 16 11:01:53 2024"
+[dumpfile_size] 229955215
+[savefile] "/home/soc/caravel-soc_fpga-lab_original/fuck_final/testbench/combine/wave_pro.gtkw"
+[timestart] 3792200000
+[size] 2560 1369
+[pos] -1 -1
+*-27.161804 4272600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_tb.
+[treeopen] uart_tb.uut.
+[treeopen] uart_tb.uut.mprj.
+[treeopen] uart_tb.uut.mprj.uart.
+[sst_width] 229
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 868
+@800200
+-wbs
+@28
+uart_tb.uut.mprj.wb_clk_i
+uart_tb.uut.mprj.wb_rst_i
+@22
+uart_tb.uut.mprj.wbs_adr_i[31:0]
+@28
+[color] 2
+uart_tb.uut.mprj.wbs_cyc_i
+[color] 2
+uart_tb.uut.mprj.wbs_stb_i
+@22
+uart_tb.uut.mprj.wbs_dat_i[31:0]
+@24
+uart_tb.uut.mprj.wbs_dat_o[31:0]
+@22
+uart_tb.uut.mprj.wbs_dat_o_axi[31:0]
+uart_tb.uut.mprj.wbs_dat_o_reg[31:0]
+uart_tb.uut.mprj.wbs_dat_o_sw[31:0]
+uart_tb.uut.mprj.wbs_dat_o_uart[31:0]
+uart_tb.uut.mprj.wbs_sel_i[3:0]
+@28
+uart_tb.uut.mprj.wbs_we_i
+uart_tb.uut.mprj.wbs_ack_o_axi
+uart_tb.uut.mprj.wbs_ack_o_reg
+uart_tb.uut.mprj.wbs_ack_o_uart
+[color] 2
+uart_tb.uut.mprj.wbs_ack_o
+@1000200
+-wbs
+@22
+uart_tb.checkbits[15:0]
+@800200
+-tbuart
+@c00028
+uart_tb.tbuart.tx_index[2:0]
+@28
+(0)uart_tb.tbuart.tx_index[2:0]
+(1)uart_tb.tbuart.tx_index[2:0]
+(2)uart_tb.tbuart.tx_index[2:0]
+@1401200
+-group_end
+@c00022
+uart_tb.tbuart.tx_pattern[7:0]
+@28
+(0)uart_tb.tbuart.tx_pattern[7:0]
+(1)uart_tb.tbuart.tx_pattern[7:0]
+(2)uart_tb.tbuart.tx_pattern[7:0]
+(3)uart_tb.tbuart.tx_pattern[7:0]
+(4)uart_tb.tbuart.tx_pattern[7:0]
+(5)uart_tb.tbuart.tx_pattern[7:0]
+(6)uart_tb.tbuart.tx_pattern[7:0]
+(7)uart_tb.tbuart.tx_pattern[7:0]
+@1401200
+-group_end
+@29
+uart_tb.uut.mprj.uart.receive.irq
+@28
+uart_tb.tbuart.ser_tx
+uart_tb.tx_busy
+@1000200
+-tbuart
+@800200
+-decode enable
+@800028
+uart_tb.uut.mprj.enable[2:0]
+@28
+(0)uart_tb.uut.mprj.enable[2:0]
+[color] 2
+(1)uart_tb.uut.mprj.enable[2:0]
+(2)uart_tb.uut.mprj.enable[2:0]
+@1001200
+-group_end
+@1000200
+-decode enable
+@28
+(32)uart_tb.mprj_io[37:0]
+(31)uart_tb.mprj_io[37:0]
+@22
+uart_tb.uut.mprj.uart.receive.state_w[3:0]
+uart_tb.uut.mprj.uart.receive.wait_cnt_r[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

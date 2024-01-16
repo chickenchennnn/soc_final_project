@@ -1,0 +1,443 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 5945
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jan 16 18:15:29 CST 2024
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: CentOS Linux release 7.6.1810 (Core)
+OS Version: 3.10.0-957.21.3.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: localhost:11.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	soc
+User home directory: /home/soc
+User working directory: /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/Vivado
+HDI_APPROOT: /home/Vivado/2022.1
+RDI_DATADIR: /home/Vivado/2022.1/data
+RDI_BINDIR: /home/Vivado/2022.1/bin
+
+Vivado preferences file: /home/soc/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/soc/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/soc/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/home/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vivado.log
+Vivado journal file: 	/home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-5945-taipei
+
+Xilinx Environment Variables
+----------------------------
+INTELOPENCLSDK: /opt/intel/opencl/SDK
+XILINX: /home/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /home/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /home/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /home/Vivado/2022.1
+XILINX_SDK: /home/Vitis/2022.1
+XILINX_VITIS: /home/Vitis/2022.1
+XILINX_VIVADO: /home/Vivado/2022.1
+XILINX_VIVADO_HLS: /home/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,888 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2503ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2522 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,888 MB. GUI used memory: 53 MB. Current time: 1/16/24, 6:15:32 PM CST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr", 0); // r
+// [GUI Memory]: 60 MB (+60381kb) [00:00:21]
+// [Engine Memory]: 5,888 MB (+6022142kb) [00:00:21]
+// Opening Vivado Project: /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr. Version: Vivado v2022.1 
+// WARNING: HEventQueue.dispatchEvent() is taking  3038 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2204 ms.
+// Tcl Message: open_project /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 66 MB (+3303kb) [00:00:29]
+// [GUI Memory]: 94 MB (+25631kb) [00:00:31]
+// [GUI Memory]: 105 MB (+7081kb) [00:00:32]
+// [GUI Memory]: 128 MB (+18044kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  4944 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1836 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1143 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 7810.453 ; gain = 169.504 ; free physical = 15834 ; free virtual = 41937 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,088 MB. GUI used memory: 86 MB. Current time: 1/16/24, 6:15:48 PM CST
+// Project name: vvd_caravel_fpga; location: /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga; part: xc7z020clg400-1
+// Elapsed time: 16 seconds
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 134 MB (+202kb) [00:00:39]
+// [Engine Memory]: 6,202 MB (+20889kb) [00:00:42]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream Complete! ; 10.77354907989502 ; 0.0 ; -0.5842830538749695 ; -1.1665661334991455 ;  ; 0.0 ; 1.42540442943573 ; 0 ; 1000 CW, 12 Warn ;  ;  ; 7586 ; 9011 ; 8.0 ; 0 ; 15 ; Tue Jan 16 18:11:02 CST 2024 ; 00:02:57 ; Vivado Implementation Defaults (Vivado Implementation 2020) ; Vivado Implementation Default Reports (Vivado Implementation 2020) ; xc7z020clg400-1 ; taipei ; Default settings for Implementation.", 1, "100", 3, false); // az
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 1.5s
+// WARNING: HEventQueue.dispatchEvent() is taking  1803 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2696 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 6,376 MB. GUI used memory: 90 MB. Current time: 1/16/24, 6:16:10 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 7,041 MB. GUI used memory: 90 MB. Current time: 1/16/24, 6:16:30 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,163 MB. GUI used memory: 90 MB. Current time: 1/16/24, 6:16:32 PM CST
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 6,971 MB. GUI used memory: 90 MB. Current time: 1/16/24, 6:16:42 PM CST
+// [Engine Memory]: 6,971 MB (+481471kb) [00:01:32]
+// [GUI Memory]: 142 MB (+1311kb) [00:01:33]
+// [GUI Memory]: 151 MB (+1338kb) [00:01:33]
+// Xgd.load filename: /home/Vivado/2022.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.9s
+// [GUI Memory]: 160 MB (+1553kb) [00:01:37]
+// DeviceView Instantiated
+// [GUI Memory]: 173 MB (+5741kb) [00:01:37]
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  4591 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.16 . Memory (MB): peak = 8188.137 ; gain = 0.000 ; free physical = 13821 ; free virtual = 39930 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 714 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8677.805 ; gain = 6.000 ; free physical = 12848 ; free virtual = 38985 
+// Tcl Message: Restored from archive | CPU: 1.170000 secs | Memory: 18.188866 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8677.805 ; gain = 6.000 ; free physical = 12848 ; free virtual = 38985 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8926.926 ; gain = 0.000 ; free physical = 12849 ; free virtual = 38986 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 69 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 64 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance   
+// Tcl Message: open_run: Time (s): cpu = 00:01:16 ; elapsed = 00:00:43 . Memory (MB): peak = 8926.926 ; gain = 894.363 ; free physical = 12696 ; free virtual = 38836 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// ExpRunCommands.openImplResults elapsed time: 48.6s
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// [GUI Memory]: 188 MB (+5668kb) [00:01:41]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 198 MB (+797kb) [00:01:46]
+// [GUI Memory]: 208 MB (+448kb) [00:01:46]
+// [GUI Memory]: 219 MB (+402kb) [00:01:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  4544 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'eq' command handler elapsed time: 59 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2713 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2789 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2897 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2627ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2627 ms.
+// Elapsed time: 59 seconds
+dismissDialog("Open Implemented Design"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aV
+// HMemoryUtils.trashcanNow. Engine heap size: 7,214 MB. GUI used memory: 156 MB. Current time: 1/16/24, 6:17:15 PM CST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // X
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTab((HResource) null, (String) null, (HResource) null, "Timing", 8, true, false); // aL - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false, false, false, false, true, false); // a - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true, false, false, false, true, false); // n - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_IMPL_SETTINGS, "Implementation Settings..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// 'et' command handler elapsed time: 4 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  4603 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true); // n - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  8795 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true, false, false, false, true, false); // n - Popup Trigger - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  2504 ms.
+// [GUI Memory]: 242 MB (+12447kb) [00:02:59]
+// Elapsed time: 25 seconds
+selectTree("PAResourceOtoP.ProgramOptionsPanelImpl_STRATEGY", "[Run Strategies, Vivado Strategies, Vivado Implementation 2022, Performance_NetDelay_high]", 13, false); // TreeChooserPanel.d
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  3066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1212 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  3396 ms.
+dismissDialog("Create New Run"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1'
+// WARNING: HEventQueue.dispatchEvent() is taking  2696 ms.
+// Tcl Message: copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1 
+// TclEventType: RUN_ADD
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// [GUI Memory]: 258 MB (+4007kb) [00:03:34]
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// TclEventType: REPORT_CREATED
+// TclEventType: REPORT_MODIFY
+// Tcl Message: copy_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 9084.219 ; gain = 0.000 ; free physical = 12350 ; free virtual = 38491 
+// Tcl Message: impl_1_copy_1 
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  1564 ms.
+// Tcl Message: set_property flow {Vivado Implementation 2022} [get_runs impl_1] 
+// [GUI Memory]: 286 MB (+16679kb) [00:03:42]
+// Tcl Message: set_property strategy Performance_NetDelay_high [get_runs impl_1] 
+// HMemoryUtils.trashcanNow. Engine heap size: 7,200 MB. GUI used memory: 193 MB. Current time: 1/16/24, 6:18:53 PM CST
+// Elapsed time: 13 seconds
+dismissDialog("Copy Run"); // bA
+dismissDialog("Settings"); // d
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// WARNING: HEventQueue.dispatchEvent() is taking  2693 ms.
+// 'c' command handler elapsed time: 8 seconds
+selectButton("OptionPane.button", "Cancel"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// WARNING: HEventQueue.dispatchEvent() is taking  3009 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2974 ms.
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  3100 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  3089 ms.
+// TclEventType: DESIGN_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,224 MB. GUI used memory: 188 MB. Current time: 1/16/24, 6:19:27 PM CST
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Tue Jan 16 18:19:28 2024] Launched impl_1... Run output will be captured here: /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 17 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Device view-level: 0.4
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  2671 ms.
+// Elapsed time: 171 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Implementation Completed"); // ag
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g
+// WARNING: HEventQueue.dispatchEvent() is taking  2637 ms.
+// WARNING: updateGUI() is taking  2417 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2417 ms.
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 7,244 MB. GUI used memory: 150 MB. Current time: 1/16/24, 6:22:30 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 7,244 MB. GUI used memory: 150 MB. Current time: 1/16/24, 6:22:30 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2364 ms.
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 7,236 MB. GUI used memory: 121 MB. Current time: 1/16/24, 6:22:34 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.6s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3090 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.16 . Memory (MB): peak = 9084.219 ; gain = 0.000 ; free physical = 12542 ; free virtual = 38679 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 714 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9084.219 ; gain = 0.000 ; free physical = 12407 ; free virtual = 38544 
+// Tcl Message: Restored from archive | CPU: 1.150000 secs | Memory: 18.170753 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9084.219 ; gain = 0.000 ; free physical = 12407 ; free virtual = 38544 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 9084.219 ; gain = 0.000 ; free physical = 12362 ; free virtual = 38498 
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  3930 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 24 seconds
+dismissDialog("Reloading"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2961 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Jan 16 18:22:53 2024] Launched impl_1... Run output will be captured here: /home/soc/caravel-soc_fpga-lab_original/fuck_final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2632 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1515 ms. Increasing delay to 3000 ms.
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2698 ms.
+// Elapsed time: 69 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+applyEscape(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // n
+// HMemoryUtils.trashcanNow. Engine heap size: 7,292 MB. GUI used memory: 193 MB. Current time: 1/16/24, 6:52:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,294 MB. GUI used memory: 169 MB. Current time: 1/16/24, 7:22:36 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,296 MB. GUI used memory: 169 MB. Current time: 1/16/24, 7:52:36 PM CST
